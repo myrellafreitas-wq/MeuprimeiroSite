@@ -12,8 +12,7 @@
     <header>
         <h1>Meu blog</h1>
         <p>Vou compartilhar conhecimentos com você</p>
-        <img src=" https://static.wikia.nocooke.net/truskawkowe-ciastko/images/6/6f/Truskawkowe_Ciastko.jpg/revision/latest/scale-to-width-down/225?cb=20131217141039&path-prefix=pl"
-            alt="imagem um">
+        <img src="https://www.superprof.com.br/blog/como-programar/" alt="imagem um">
     </header>
     <main>
         <h2>Meu primeiro post</h2>
@@ -26,7 +25,7 @@
 </body>
 <script>
     const botao = document.querySelector("button");
-    botao.addEventlistener("click", botaoClicado);
+    botao.addEventListener("click", botaoClicado);
     function botaoClicado() {
         let texto = botao.querySelector("span");
         texto.textContent++;
