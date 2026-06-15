@@ -20,16 +20,22 @@
         <p>Boas vindas ao meu Blog, aqui vou
             compartilhar dicas com você!
         </p>
-        <button>💗<span>0</span></button>
+        <button>💗 <span>0</span></button>
+        <button>🥺​ <span>0</span></button>
+        <button>😐​ ​<span>0</span></button>
     </main>
 </body>
 <script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
-    function botaoClicado() {
-        let texto = botao.querySelector("span");
-        texto.textContent++;
-    }
+    const botoes = document.querySelectorAll("button");
+    botoes.forEach(function (botao) {
+        botoes.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            let texto = botoes.querySelector("span");
+            texto.textContent++;
+        }
+    })
+
+
 </script>
 
 </html>
